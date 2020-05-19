@@ -1,6 +1,8 @@
 # Movie-Recommendation-Engine
 Final project for COP4710, Data Modeling
 
+The .py file includes the Python script used to acquire the data via the IMBD API and parse it into the tables. 
+
 Project requirements:
 
 Undergraduate Students
