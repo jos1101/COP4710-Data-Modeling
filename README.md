@@ -24,7 +24,7 @@ To run the program, please ensure that all the CSV files, and the JAR file are i
 directory. Do not change any names or remove any files, they are all necessary for the program to run.
 The program was built using Java 8, so that version of the JDK is required.
 
-For compilation, please the contents of the zip into your favorite IDE (or navigate to the path via the
+For compilation, place the contents of the zip into your favorite IDE (or navigate to the path via the
 command line), compile, and run. Give the program roughly 5 minutes to perform data insertions into
 MYSQL.
 
