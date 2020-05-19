@@ -1,32 +1,58 @@
 # Movie-Recommendation-Engine
 Final project for COP4710, Data Modeling
 
-The .py file includes the Python script used to acquire the data via the IMBD API and parse it into the tables. 
+James Smith
 
-Project requirements:
+N01400606
 
-Undergraduate Students
+COP4710 – Data Modeling
 
-For your final project, you are going to build a movie recommendation system. The data should be downloaded from here: The top 5000 movie data from IMDB: https://www.kaggle.com/tmdb/tmdb-movie-metadata/data (Links to an external site.). This data contains information about 5000 movies from IMDB. 
+Final Project Report
 
-Instructions for project completion
+Movie Recommendation Engine
 
-All the coding will be done in a Java environment. MySQL will only be used to store the dataset and new tables and access them for information extraction. You will give a demo of the project in class/in instrctor's office (date and location will be finalized later). You will submit EVERYTHING that the instructor needs to execute your project.
+Objectives:
 
-When you create the database tables with the dataset, make sure that your tables are in 1NF (see the attached video). In layman's terms, each cell in your tables will contain at most 1 data entry.
-1 Keywords
+The goal of this project was to create a movie recommendation engine based on a user’s input. The
+program using pre-parsed CSV files from a lighter version of the IMBD database. This project aims to
+return intelligent and useful recommendations to the user using a similarity matrix to calculate similarity
+scores.
 
-To develop the recommendation engine, you should make an extensive use of the keywords that describe the films. Indeed, a basic assumption is that films described by similar keywords should have similar contents. "Keywords" is an attribute in the tmdb_5000_movies.csv file. 
+How to run:
 
-Create and store a list of keywords which appear at least 5 times in the database. Do not store the keywords which appear less than 5 times in the given database.
+To run the program, please ensure that all the CSV files, and the JAR file are included in the same
+directory. Do not change any names or remove any files, they are all necessary for the program to run.
+The program was built using Java 8, so that version of the JDK is required.
 
-2. Genres
+For compilation, please the contents of the zip into your favorite IDE (or navigate to the path via the
+command line), compile, and run. Give the program roughly 5 minutes to perform data insertions into
+MYSQL.
 
-The genres attribute will surely be important while building the recommendation engines since it describes the content of the film (i.e. Drama, Comedy, Action, ...). "Genres" is an attribute in the tmdb_5000_movies.csv file.
+I/O:
 
-3. Recommendation Engine
+No extra files are needed to run the program, and the program will also not produce any output files.
+All input is given via the keyboard, and the recommendations are sent directly to the console.
 
-3.1 Architecture of the Recommender System
+Design:
+
+First, a connection is made to MYSQL, and a database and multiple tables that correlate to the CSV files
+in the zip are created. Then, the data is taken from the CSV files that were parsed in part 1 of the project
+and inserted into tables, then using MYSQL queries, the data is then stored in a class called Movie, which
+holds all the relevant information needed for proper recommendations to be evaluated.
+
+The program, after a loading period, shows a small menu which tells the user to enter a movie title, or
+the number 0 to exit the program. The program will either return a list of recommendations upon a
+valid input and after a brief evaluation, show an error message on an invalid input, or exit upon
+receiving a 0. If the program receives a 0, the database is dropped, and the program then exits.
+
+Sample Run and Closing Thoughts:
+
+This is a small sample run of the program from beginning of execution, to exit it includes multiple valid
+inputs, and invalid input, and the exit command. I believe the engine works best when given movies that
+have no sequels, due to the fact that the similarity Matrix may overwhelm the results with sequels, as
+you can see in the results of a search of “Star Wars”. So I would recommend users choose movies that
+may not have multiple sequels in order to get better recommendations from the engine.
+
 
 In order to build the recommendation engine, you will proceed in two steps:
 
