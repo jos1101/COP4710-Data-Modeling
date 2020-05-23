@@ -45,7 +45,3 @@ you can see in the results of a search of “Star Wars”. So I would recommend 
 may not have multiple sequels in order to get better recommendations from the engine.
 
 
-In order to build the recommendation engine, you will proceed in two steps:
-
-    determine  films with a content similar to the entry provided by the user
-    select the 5 most popular films among these  films.
