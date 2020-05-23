@@ -1,13 +1,4 @@
 # Movie-Recommendation-Engine
-Final project for COP4710, Data Modeling
-
-James Smith
-
-N01400606
-
-COP4710 – Data Modeling
-
-Final Project Report
 
 Movie Recommendation Engine
 
